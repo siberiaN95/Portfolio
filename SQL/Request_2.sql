@@ -13,8 +13,8 @@
 
 1. SELECT * from user WHERE level_id =1 AND skill > 799000 AND user_name LIKE "%a%";
 2. DELETE FROM user WHERE skill<100000;
-3. SELECT * FROM user by skill DESC;
-4. INSERT INTO user VALUES ( 7; 'Oleg'; 4, 10);
+3. SELECT * FROM user ORDER BY skill DESC;
+4. INSERT INTO user VALUES ( 7, 'Oleg', 4, 10);
 5. UPDATE user SET skill = 2000000 WHERE level_id<2;
-6. SELECT user.user_name FROM user WHERE user.level_id=(select level.id from level.level_name='admin);
+6. SELECT user.user_name FROM user WHERE user.level_id=(SELECT level.id FROM level WHERE level.level_name='admin');
 7. SELECT user.user_name FROM user JOIN level ON user.level_id=level.id AND level_name='admin';
